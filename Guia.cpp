@@ -1,6 +1,8 @@
 //Tipos de variables y definicion
 int entero = 0;
 float decimal = 0.0;
+char cadena[40] = "Hola"; //Cadena de caracteres
+int sueldos[5];         //Vector de 5 casillas este puede ser de cualqioer tipo.
 
 //Importar librerias de funciones y objetos contenidos eb otros archivos
 #include<iostream>
@@ -101,3 +103,94 @@ int strcmp(cadena1, cadena2);
 //retorna 0 si son iguales
 //mayor a 0 si la primera(cadena1) es mayor alfabeticamente
 //y menor en caso contrario
+
+//Clases y metodos de la clase (ejemplo)
+#include <iostream>
+using namespace std;
+class Persona {
+private:
+    char nombre[40];        //Atributos
+    int edad;
+public:
+    void inicializar();     //Metodos
+    void imprimir();
+};
+
+void Persona::inicializar()
+{
+    //Cosas que realizara el metodo de persona en el metodo inicializar.
+}
+
+void Persona::imprimir()
+{    
+    //Cosas que realizara el metodo de persona en el metodo imprimir.
+}
+
+void main()
+{
+        Persona persona1;           //Objeto de la clase
+        persona1.inicializar();     //Llamada al metodo de la clase
+        persona1.imprimir();        //Llamada al metodo de la clase
+}
+
+//Metodos con parametros (ejemplo)
+#include <iostream>
+using namespace std;
+class Persona {
+private:
+    char nombre[40];        //Atributos
+    int edad;
+public:
+    void inicializar(char nom[40]);     //Metodos con parametro
+    void imprimir();
+};
+
+void Persona::inicializar(char nom[40])
+{
+    //Cosas que realizara el metodo de persona en el metodo inicializar.
+}
+
+void Persona::imprimir()
+{    
+    //Cosas que realizara el metodo de persona en el metodo imprimir.
+}
+
+void main()
+{        
+        char nombre[40] = "Elizabeth";
+        Persona persona1;           //Objeto de la clase
+        persona1.inicializar(nombre);     //Llamada al metodo de la clase
+        persona1.imprimir();        //Llamada al metodo de la clase
+}
+
+//Metodos que retornan datos (ejemplo)
+#include <iostream>
+using namespace std;
+class Persona {
+private:
+    char nombre[40];        //Atributos
+    int edad;
+public:
+    void inicializar(char nom[40]);     //Metodos con parametro
+    char* imprimir();
+};
+
+void Persona::inicializar(char nom[40])
+{
+    //Cosas que realizara el metodo de persona en el metodo inicializar.
+}
+
+void Persona::imprimir()
+{    
+    //Cosas que realizara el metodo de persona en el metodo imprimir.
+}
+
+void main()
+{        
+        char nombre[40] = "Elizabeth";
+        char imp[40];
+        Persona persona1;           //Objeto de la clase
+        persona1.inicializar(nombre);     //Llamada al metodo de la clase
+        imp = persona1.imprimir();        //Llamada al metodo de la clase
+        cout << imp;
+}
