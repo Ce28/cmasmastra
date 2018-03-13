@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ACT02.EstructuraVector", "ACT02.EstructuraVector.vcproj", "{1D82BA1E-069A-40DC-841E-CFDA6665C602}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D82BA1E-069A-40DC-841E-CFDA6665C602}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1D82BA1E-069A-40DC-841E-CFDA6665C602}.Debug|Win32.Build.0 = Debug|Win32
+		{1D82BA1E-069A-40DC-841E-CFDA6665C602}.Release|Win32.ActiveCfg = Release|Win32
+		{1D82BA1E-069A-40DC-841E-CFDA6665C602}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
